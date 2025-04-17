@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="hr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crowny Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="logo.png" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">home</a> </li>
+          <li><a href="#about">about</a> </li>
+          <li><a href="#rooms">rooms</a> </li>
+          <li><a href="#pages">pages</a> </li>
+          <li><a href="#news">news</a> </li>
+          <li><a href="#contact">contact</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li> <button class="primary-btn">BUKIRAJTE SAD</button> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="banner-1.png" alt="">
+          <div class="text">
+            <h1>Provedite Vaše Slobodno Vrijeme S Nama</h1>
+            <p>Volimo ono što radimo i posvećeni smo izvrsnosti
+            </p>
+            <div class="flex">
+              <button class="primary-btn">VIŠE</button>
+              <button class="secondary-btn">KONTAKT</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="banner-2.png" alt="">
+          <div class="text">
+            <h1>Provedite Vaše Slobodno Vrijeme S Nama</h1>
+            <p>Volimo ono što radimo i posvećeni smo izvrsnosti
+            </p>
+            <div class="flex">
+              <button class="primary-btn">VIŠE</button>
+              <button class="secondary-btn">KONTAKT</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="banner-3.png" alt="">
+          <div class="text">
+            <h1>Provedite Vaše Slobodno Vrijeme S Nama</h1>
+            <p>Volimo ono što radimo i posvećeni smo izvrsnosti
+            </p>
+            <div class="flex">
+              <button class="primary-btn">VIŠE</button>
+              <button class="secondary-btn">KONTAKTIRAJTE NAS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Bukirajte </span> Svoju Sobu </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Dolazak">
+          <input type="date" placeholder="Odlazak">
+          <input type="number" placeholder="Odrasli">
+          <input type="number" placeholder="Djece">
+          <input type="submit" value="TRAŽI">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>BOK!</h1>
+          <h2>Crowny Hotel</h2>
+        </div>
+        <p>Ljubav prema radu je ključ uspjeha, čak i kada se suočavamo s izazovima svakodnevice.
+            Kako bi se postigla visoka razina učinkovitosti, potrebno je uložiti trud i predanost.
+            Uživanje u radu i kvaliteti života dolazi kada se uravnoteže odgovornosti i slobodno vrijeme.
+            Oni koji zanemaruju svoju odgovornost često snose posljedice svojih postupaka.</p>
+        <button class="primary-btn">VIŠE O NAMA</button>
+      </div>
+      <div class="right">
+        <img src="about.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>5500</h1>
+        <hr>
+        <span>Korisnika</span>
+      </div>
+      <div class="box">
+        <h1>2250</h1>
+        <hr>
+        <span>Vjernih Korisnika</span>
+      </div>
+      <div class="box">
+        <h1>150</h1>
+        <hr>
+        <span>Hotela</span>
+      </div>
+      <div class="box">
+        <h1>750</h1>
+        <hr>
+        <span>Soba</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms">
+    <div class="container top">
+      <div class="heading">
+        
+        <h2>ISTRAŽI</h2>
+        <p>Ponuda dostupnih soba
+        </p>
+      </div>
+      
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="room-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>SUPER SOBA</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luksuzna soba u centru Zagreba
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BUKIRAJ SE</button>
+                <h3>150€ <span> <br> Noćenje </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>SUPER SOBA</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luksuzna soba u centru Zagreba
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BUKIRAJ SE</button>
+                <h3>170€ <span> <br> Noćenje </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>SUPER SOBA </h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luksuzna soba u Zagrebu, Trešnjevka
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BUKIRAJ SE</button>
+                <h3>70€ <span> <br> Noćenje </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-4.png" alt="">
+            </div>
+            <div class="text">
+              <h2>SUPER SOBA </h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luksuzna soba u Splitu
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BUKIRAJ SE</button>
+                <h3>150€ <span> <br> Noćenje </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-5.png" alt="">
+            </div>
+            <div class="text">
+              <h2>SUPER SOBA</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luksuzna soba u Dubrovniku
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BUKIRAJ SE</button>
+                <h3>250€ <span> <br> Noćenje </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-6.png" alt="">
+            </div>
+            <div class="text">
+              <h2>SUPER SOBA</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luksuzna soba u Puli
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BUKIRAJ SE</button>
+                <h3>190€ <span> <br> Noćenje </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-7.png" alt="">
+            </div>
+            <div class="text">
+              <h2>SUPER SOBA</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luksuzna soba u Zagrebu, Jarun
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BUKIRAJ SE</button>
+                <h3>90€ <span> <br> Noćenje </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-8.png" alt="">
+            </div>
+            <div class="text">
+              <h2>SUPER SOBA</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luksuzna soba u Zagrebu, Rudeš
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BUKIRAJ SE </button>
+                <h3>70€ <span> <br> Noćenje  </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        
+        <h2>FOTOGRAFIJE</h2>
+        <p>Pregledajte naše fotografije </p>
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-2.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-5.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <!--<h3>Slika Titlova tu stavi</h3>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services top">
+    <div class="container">
+      <div class="heading">
+        
+        <h2>Usluge</h2>
+        <p>usluge koje vam predlažemo </p>
+      </div>
+
+
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Ukusna hrana</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-person-biking"></i>
+              <h3>Fitness centar</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Restoran</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Spa centar</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="service.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="Customer top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Odlična usluga i predobro osoblje</p>
+          <h3>Fran Lukić</h3>
+          <label>Fran Lukić</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Definitivno bih se ponovno vratio. Sve pohvale</p>
+          <h3>Ivan Jambrešić</h3>
+          <label>Ivan Jambrešić</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Predobra atmosfera i lokacija</p>
+          <h3>Ante Nikolić</h3>
+          <label>Ante Nikolić</label>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Jedno od najboljih mjesta</p>
+            <h3>Marko Jurkić</h3>
+            <label>Marko Jurkić</label>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Sigurno ću se opet vratiti</p>
+            <h3>Mislav Janić</h3>
+            <label>Mislav Janić</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="news top rooms">
+    <div class="container">
+      <div class="heading">
+        
+        <h2>Vijesti</h2>
+        <p>Novosti koje vam donosimo
+      </div>
+
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="blog-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Redovita renovacija porte</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                
+              </div>
+              <p>Novo uređena prostorija za rezervacije</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="blog-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Redovite renovacije soba</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                
+              </div>
+              <p>Novo uređene sobe u našem hotelu</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="blog-s1.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Otvaranje novog hotela</h2>
+              <p>Novo otvoreni hotel u Hrvatskoj
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="blog-s2.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Partiji</h2>
+              <p>Redoviti su partiji s novim DJ-evima.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="blog-s3.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Obiteljsko druženje u našim hotelima</h2>
+              <p>Roditelji s djecom su dobrodošli
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter mtop">
+    <div class="container flex_space">
+      <h1>Pretplatite se kako bi ste vidjeli nove obavijesti</h1>
+      <input type="text" placeholder="Your Email">
+      <input type="text" value="Subscribe">
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="logo-2.png" alt="">
+        <p>Mi smo mladi tim inženjera iz RUP-a koji su došli s idejom kreiranja aplikacije za lakše rezerviranje hotela našim korisnicima kako bi si što lakše rezervirali hotel za ljetovanje</p>
+
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <li>Company History</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>Aplikacija je namijenjena olakšavanju rezervacije hotela našim korisnicima.
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>Zagrebačka Ul.5, 10410, Velika Gorica </label> <br>
+        <i class="fa fa-phone"></i>
+        <label>[385] 123 123 1234</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>info@rup.com</label> <br>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
