@@ -476,7 +476,7 @@ h1 {
 }
 
 .services h3 {
-  font-size: 20px;
+  font-size: 20px; 
   font-weight: 400;
   margin-top: 20p;
   transition: 0.5s;
@@ -501,21 +501,21 @@ h1 {
 /*--------services---------*/
 /*--------Customer---------*/
 .Customer {
-  background-image: url("../images/background-2.png");
+  background-image: url("background-2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 70vh; 
   width: 100%;
   color: #fff;
-  text-align: center;
+  text-align: center; /*15*/
 }
 
 .Customer .container {
-  max-width: 70%;
+  max-width: 70%; 
 }
 
 .Customer .item {
-  padding: 10% 0;
+  padding: 22% 0; /*18%*/
 }
 
 .Customer i {
@@ -533,17 +533,17 @@ h1 {
 }
 
 .Customer h3 {
-  margin-top: 20px;
+  margin-top: 20px; /*ovo sam s 30px na 200 stavio*/
   color: #7fc142;
 }
 
 .Customer span {
-  font-size: 15px;
+  font-size: 15px; 
 }
 
 .owl-carousel2 .owl-dots {
   position: absolute;
-  bottom: 70px;
+  bottom: 70px; 
   left: 46.6%;
 }
 
@@ -556,7 +556,7 @@ h1 {
 }
 
 .owl-carousel2 span {
-  border: 2px solid #fff;
+  border: 2px solid #fff; 
   background: transparent !important;
 }
 
